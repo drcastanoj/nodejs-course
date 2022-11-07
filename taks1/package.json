@@ -1,0 +1,26 @@
+{
+  "name": "node-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "nodemon ./task1.1.js",
+    "task2": "nodemon ./task1.2.js",
+    "babel-node": "babel-node",
+    "task1es6": "nodemon --exec npm run babel-node -- ./task1.1es6.js",
+    "task2es6": "nodemon --exec npm run babel-node -- ./task1.2es6.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  },
+  "type": "module"
+}
